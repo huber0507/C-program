@@ -515,9 +515,49 @@
 //}
 
 
+/*2023年4月17日22:21:06*/
+/*输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数*/
 //#include<stdio.h>
 //
 //int main()
 //{
+//	char c;
+//	int letters = 0, spaces = 0, digits = 0, others = 0;
+//	printf("请输入一些字母：\n");
+//	while ((c=getchar())!='\n')   //循环结束标志为\n
+//	{
+//		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))   //这里没明白是什么写的
+//			letters++;
+//		else if (c >= '0' && c <= '9')							//这里没明白是什么写的
+//			digits++;
+//		else if (c == ' ')
+//			spaces++;
+//		else
+//			others++;
+//	}
+//	printf("字母=%d,数字=%d,空格=%d,其他=%d\n", letters, spaces, digits, others);
 //	return 0;
 //}
+
+
+/*2023年4月17日23:01:30*/
+/*求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。例如2+22+222+2222+22222(此时共有5个数相加)，几个数相加由键盘控制*/
+
+#include<stdio.h>
+int main()
+{
+	int s = 0, a, n, t;
+	printf("请输入a和n:\n");
+	scanf("%d%d", &a, &n);
+	t = a;
+	while (n > 0)
+	{
+		s += t;
+		a = a * 10;
+		t += a;
+		n--;
+	}
+	printf("a+aa+aaa....=%d\n", s);    //2023年4月17日23:07:12  还没想明白，太困了
+
+	return 0;
+}
