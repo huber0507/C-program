@@ -648,7 +648,39 @@
 
 
 
-/*2023年4月28日21:34:35*/
-/*两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，乙队为x,y,z三人。
-已抽签决定比赛名单。有人向队员打听比赛的名单。a说他不和x比，c说他不和x,z比，
-请编程序找出三队赛手的名单。*/
+
+
+
+/*2023年5月6日08:57:45*/
+
+/*冒泡排序*/
+
+//#include <stdio.h>
+//void bubble_sort(int arr[], int len) {
+//    int i, j, temp;
+//    for (i = 0; i < len - 1; i++)
+//        for (j = 0; j < len - 1 - i; j++)
+//            if (arr[j] > arr[j + 1]) {
+//                temp = arr[j];
+//                arr[j] = arr[j + 1];
+//                arr[j + 1] = temp;
+//            }
+//}
+//int main() {
+//    int arr[] = { 22, 34, 3, 32, 82, 55, 89, 50, 37, 5, 64, 35, 9, 70 };
+//    int len = (int)sizeof(arr) / sizeof(*arr);
+//    bubble_sort(arr, len);
+//    int i;
+//    for (i = 0; i < len; i++)
+//        printf("%d ", arr[i]);
+//    return 0;
+//}
+
+/*
+void swap(int *a,int *b)  //交换两个变量
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+*/
